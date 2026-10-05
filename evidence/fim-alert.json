@@ -1,0 +1,95 @@
+[
+  {
+    "timestamp": "2026-10-05T03:40:56.610+0000",
+    "rule": {
+      "level": 7,
+      "description": "Integrity checksum changed.",
+      "id": "550",
+      "mitre": {
+        "id": [
+          "T1565.001"
+        ],
+        "tactic": [
+          "Impact"
+        ],
+        "technique": [
+          "Stored Data Manipulation"
+        ]
+      },
+      "firedtimes": 1,
+      "mail": false,
+      "groups": [
+        "ossec",
+        "syscheck",
+        "syscheck_entry_modified",
+        "syscheck_file"
+      ],
+      "pci_dss": [
+        "11.5"
+      ],
+      "gpg13": [
+        "4.11"
+      ],
+      "gdpr": [
+        "II_5.1.f"
+      ],
+      "hipaa": [
+        "164.312.c.1",
+        "164.312.c.2"
+      ],
+      "nist_800_53": [
+        "SI.7"
+      ],
+      "tsc": [
+        "PI1.4",
+        "PI1.5",
+        "CC6.1",
+        "CC6.8",
+        "CC7.2",
+        "CC7.3"
+      ]
+    },
+    "agent": {
+      "id": "001",
+      "name": "cloud-app",
+      "ip": "PRIVATE_LAB_IP"
+    },
+    "manager": {
+      "name": "cloud-manager"
+    },
+    "id": "1791171656.691477",
+    "full_log": "File '/opt/server-controls-fim/config.txt' modified\nMode: realtime\nChanged attributes: size,mtime,md5,sha1,sha256\nSize changed from '18' to '55'\nOld modification time was: '1791171441', now it is '1791171656'\nOld md5sum was: '2c121266e0a1b9361bdad203d5bcb44d'\nNew md5sum is : 'ff9636a356f30c31f719f9e58b6217c9'\nOld sha1sum was: 'a126ed37a9dfb60dfd752444e66d902efde0ca57'\nNew sha1sum is : '64e050a2e357c90b550d6867d4e4cf2afdb3c569'\nOld sha256sum was: 'e4a100a8d91dfb35645766987791704d79b704ad6230509f9dab105872da9c63'\nNew sha256sum is : 'c935dc9c4b7dee74d9c1d70f5f6013cc714b6b76d70fcb895c5a012d6d74fb19'\n",
+    "syscheck": {
+      "path": "/opt/server-controls-fim/config.txt",
+      "mode": "realtime",
+      "size_before": "18",
+      "size_after": "55",
+      "perm_after": "rw-r--r--",
+      "uid_after": "0",
+      "gid_after": "0",
+      "md5_before": "2c121266e0a1b9361bdad203d5bcb44d",
+      "md5_after": "ff9636a356f30c31f719f9e58b6217c9",
+      "sha1_before": "a126ed37a9dfb60dfd752444e66d902efde0ca57",
+      "sha1_after": "64e050a2e357c90b550d6867d4e4cf2afdb3c569",
+      "sha256_before": "e4a100a8d91dfb35645766987791704d79b704ad6230509f9dab105872da9c63",
+      "sha256_after": "c935dc9c4b7dee74d9c1d70f5f6013cc714b6b76d70fcb895c5a012d6d74fb19",
+      "uname_after": "root",
+      "gname_after": "root",
+      "mtime_before": "2026-10-05T03:37:21",
+      "mtime_after": "2026-10-05T03:40:56",
+      "inode_after": 1834322,
+      "changed_attributes": [
+        "size",
+        "mtime",
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "event": "modified"
+    },
+    "decoder": {
+      "name": "syscheck_integrity_changed"
+    },
+    "location": "syscheck"
+  }
+]

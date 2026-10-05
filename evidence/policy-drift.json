@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-05T03:13:06.434139+00:00",
+  "result": "FAIL",
+  "findings": [
+    {
+      "rule_id": "sgr-REDACTED",
+      "reason": "Unexpected data ingress",
+      "rule": {
+        "SecurityGroupRuleId": "sgr-REDACTED",
+        "GroupId": "sg-REDACTED",
+        "GroupOwnerId": "PROJECT_REDACTED",
+        "IsEgress": false,
+        "IpProtocol": "tcp",
+        "FromPort": 5432,
+        "ToPort": 5432,
+        "ReferencedGroupInfo": {
+          "GroupId": "sg-REDACTED",
+          "UserId": "PROJECT_REDACTED"
+        },
+        "Description": "Disposable controlled drift test",
+        "Tags": [],
+        "SecurityGroupRuleArn": "ARN_REDACTED"
+      }
+    }
+  ]
+}

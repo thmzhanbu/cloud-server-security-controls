@@ -1,0 +1,22 @@
+{
+  "CommandId": "2368ccae-04bc-4c1c-ada6-b7e5a87c540b",
+  "InstanceId": "i-REDACTED",
+  "Comment": "",
+  "DocumentName": "AWS-RunShellScript",
+  "DocumentVersion": "$DEFAULT",
+  "PluginName": "aws:runShellScript",
+  "ResponseCode": 0,
+  "ExecutionStartDateTime": "2026-10-05T03:13:08.410Z",
+  "ExecutionElapsedTime": "PT0.048S",
+  "ExecutionEndDateTime": "2026-10-05T03:13:08.410Z",
+  "Status": "Success",
+  "StatusDetails": "Success",
+  "StandardOutputContent": "{\"utc\": \"2026-10-05T03:13:08.452156+00:00\", \"destination\": \"PRIVATE_LAB_IP\", \"port\": 5432, \"expected\": \"allowed\", \"observed\": \"allowed\", \"passed\": true, \"detail\": \"server-controls-lab: simulated data service\"}\n",
+  "StandardOutputUrl": "",
+  "StandardErrorContent": "",
+  "StandardErrorUrl": "",
+  "CloudWatchOutputConfig": {
+    "CloudWatchLogGroupName": "",
+    "CloudWatchOutputEnabled": false
+  }
+}

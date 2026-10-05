@@ -1,0 +1,25 @@
+{
+  "app": {
+    "utc": "2026-10-05T03:04:03.681543+00:00",
+    "destination": "PRIVATE_LAB_IP",
+    "port": 5432,
+    "expected": "allowed",
+    "observed": "allowed",
+    "passed": true,
+    "detail": "server-controls-lab: simulated data service"
+  },
+  "probe": {
+    "utc": "2026-10-05T03:05:20.576468+00:00",
+    "destination": "PRIVATE_LAB_IP",
+    "port": 5432,
+    "expected": "blocked",
+    "observed": "blocked",
+    "passed": true,
+    "detail": "Connection timed out; correlate with listener health and destination policy."
+  },
+  "policy_check": {
+    "passed": true,
+    "data_ingress": "TCP 5432 from application group only",
+    "probe_has_egress_to_data": true
+  }
+}

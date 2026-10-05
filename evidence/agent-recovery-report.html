@@ -1,0 +1,28 @@
+<!doctype html><meta charset="utf-8"><title>Agent coverage and recovery</title><style>body{background:#101b2d;color:#eef4ff;font:18px system-ui;max-width:1100px;margin:35px auto}section{background:#1c2c43;padding:20px;margin:15px 0;border-radius:12px}pre{white-space:pre-wrap;font-size:16px}small{color:#b7c9e4}h2{color:#76debc}</style><small>LIVE LAB EVIDENCE • ap-southeast-2 • Saved manager outputs retrieved through Systems Manager</small><h1>Security agent coverage and recovery</h1><section><h2>Baseline · 3 / 3 Active</h2><small>2026-10-05T04:26:33.577Z</small><pre>
+Wazuh agent_control. List of available agents:
+   ID: 000, Name: cloud-manager (server), IP: 127.0.0.1, Active/Local
+   ID: 001, Name: cloud-app, IP: any, Active
+   ID: 002, Name: cloud-probe, IP: any, Active
+   ID: 003, Name: cloud-data, IP: any, Active
+
+List of agentless devices:
+
+</pre></section><section><h2>Coverage gap · probe Disconnected</h2><small>2026-10-05T04:27:04.303Z</small><pre>
+Wazuh agent_control. List of available agents:
+   ID: 000, Name: cloud-manager (server), IP: 127.0.0.1, Active/Local
+   ID: 001, Name: cloud-app, IP: any, Active
+   ID: 002, Name: cloud-probe, IP: any, Disconnected
+   ID: 003, Name: cloud-data, IP: any, Active
+
+List of agentless devices:
+
+</pre></section><section><h2>Recovery · 3 / 3 Active</h2><small>2026-10-05T04:27:39.267Z</small><pre>
+Wazuh agent_control. List of available agents:
+   ID: 000, Name: cloud-manager (server), IP: 127.0.0.1, Active/Local
+   ID: 001, Name: cloud-app, IP: any, Active
+   ID: 002, Name: cloud-probe, IP: any, Active
+   ID: 003, Name: cloud-data, IP: any, Active
+
+List of agentless devices:
+
+</pre></section><small>Controlled service stop on cloud-probe. Original manager threshold restored after test. This report is not the AWS console or Wazuh dashboard.</small>

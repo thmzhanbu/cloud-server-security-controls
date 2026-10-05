@@ -1,0 +1,24 @@
+<!doctype html><html><meta charset="utf-8"><title>Server controls — audit and recovery evidence</title><style>body{font:16px system-ui;background:#101827;color:#edf3ff;margin:40px;max-width:1300px}h1{font-size:30px}section{display:flex;gap:18px}article{background:#1d2b41;border:1px solid #41536d;padding:18px;flex:1;min-width:0}h2{font-size:19px}.badge{font-weight:bold;color:#7ee2bc}pre{font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere}small{color:#b0bfd1}</style><h1>Cloud Server Security Controls</h1><p>Live AWS policy exports and Systems Manager test results • Sydney • 5 October 2026</p><p>Evidence report generated from saved JSON. This view is not the AWS console.</p><section><article><h2>Baseline: policy compliant</h2><p class="badge">PASS</p><p>2026-10-05T03:11:13.064306+00:00</p><pre>[]</pre><small>Source: policy-baseline.json</small></article><article><h2>Drift: unexpected ingress detected</h2><p class="badge">FAIL</p><p>2026-10-05T03:13:06.434139+00:00</p><pre>[
+  {
+    &quot;rule_id&quot;: &quot;sgr-REDACTED&quot;,
+    &quot;reason&quot;: &quot;Unexpected data ingress&quot;,
+    &quot;rule&quot;: {
+      &quot;SecurityGroupRuleId&quot;: &quot;sgr-REDACTED&quot;,
+      &quot;GroupId&quot;: &quot;sg-REDACTED&quot;,
+      &quot;GroupOwnerId&quot;: &quot;PROJECT_REDACTED&quot;,
+      &quot;IsEgress&quot;: false,
+      &quot;IpProtocol&quot;: &quot;tcp&quot;,
+      &quot;FromPort&quot;: 5432,
+      &quot;ToPort&quot;: 5432,
+      &quot;ReferencedGroupInfo&quot;: {
+        &quot;GroupId&quot;: &quot;sg-REDACTED&quot;,
+        &quot;UserId&quot;: &quot;PROJECT_REDACTED&quot;
+      },
+      &quot;Description&quot;: &quot;Disposable controlled drift test&quot;,
+      &quot;Tags&quot;: [],
+      &quot;SecurityGroupRuleArn&quot;: &quot;ARN_REDACTED
+    }
+  }
+]</pre><small>Source: policy-drift.json</small></article><article><h2>Recovery: baseline restored</h2><p class="badge">PASS</p><p>2026-10-05T03:13:15.248285+00:00</p><pre>[]</pre><small>Source: policy-restored.json</small></article></section><h3>Probe connectivity — drift</h3><pre>{&quot;utc&quot;: &quot;2026-10-05T03:13:08.452156+00:00&quot;, &quot;destination&quot;: &quot;PRIVATE_LAB_IP&quot;, &quot;port&quot;: 5432, &quot;expected&quot;: &quot;allowed&quot;, &quot;observed&quot;: &quot;allowed&quot;, &quot;passed&quot;: true, &quot;detail&quot;: &quot;server-controls-lab: simulated data service&quot;}
+</pre><h3>Probe connectivity — restored</h3><pre>{&quot;utc&quot;: &quot;2026-10-05T03:13:21.577016+00:00&quot;, &quot;destination&quot;: &quot;PRIVATE_LAB_IP&quot;, &quot;port&quot;: 5432, &quot;expected&quot;: &quot;blocked&quot;, &quot;observed&quot;: &quot;blocked&quot;, &quot;passed&quot;: true, &quot;detail&quot;: &quot;Connection timed out; correlate with listener health and destination policy.&quot;}
+</pre></html>

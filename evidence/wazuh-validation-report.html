@@ -1,0 +1,11 @@
+<!doctype html><meta charset="utf-8"><title>Cloud Server Security Controls — Detection Evidence</title><style>body{background:#101b2d;color:#e7efff;font:20px system-ui;max-width:1100px;margin:50px auto}section{background:#1c2c43;padding:24px;border-radius:14px;margin:20px 0}h1{font-size:36px}small{color:#b7c9e4}pre{white-space:pre-wrap;font-size:18px}b{color:#63e1b0}</style><small>LIVE LAB EVIDENCE • ap-southeast-2 • Report from saved Systems Manager outputs and Wazuh alert JSON</small><h1>Cloud Server Security Controls</h1><section><h2>Agent coverage: <b>3 / 3 Active</b></h2><pre>
+Wazuh agent_control. List of available agents:
+   ID: 000, Name: cloud-manager (server), IP: 127.0.0.1, Active/Local
+   ID: 001, Name: cloud-app, IP: any, Active
+   ID: 002, Name: cloud-probe, IP: any, Active
+   ID: 003, Name: cloud-data, IP: any, Active
+
+List of agentless devices:
+
+active
+</pre></section><section><h2>File integrity detection: <b>PASS</b></h2><p>Controlled modification on cloud-app • Rule 550 • Severity 7</p><p>2026-10-05T03:40:56.610+0000 • realtime detection</p><p>File: /opt/server-controls-fim/config.txt</p><p>Size: 18 → 55 bytes</p><small>SHA-256 before</small><pre>e4a100a8d91dfb35645766987791704d79b704ad6230509f9dab105872da9c63</pre><small>SHA-256 after</small><pre>c935dc9c4b7dee74d9c1d70f5f6013cc714b6b76d70fcb895c5a012d6d74fb19</pre></section><small>This is a lab validation report, not the AWS console or Wazuh dashboard. A controlled change demonstrates detection; it is not evidence of a compromise.</small>

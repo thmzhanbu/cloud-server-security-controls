@@ -1,0 +1,5 @@
+{
+  "Status": "Success",
+  "StandardOutputContent": "\nWazuh agent_control. List of available agents:\n   ID: 000, Name: cloud-manager (server), IP: 127.0.0.1, Active/Local\n   ID: 001, Name: cloud-app, IP: any, Active\n   ID: 002, Name: cloud-probe, IP: any, Active\n   ID: 003, Name: cloud-data, IP: any, Active\n\nList of agentless devices:\n\nactive\n",
+  "ExecutionEndDateTime": "2026-10-05T03:41:08.376Z"
+}

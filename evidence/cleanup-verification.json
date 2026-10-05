@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-05T04:44:01.952768+00:00",
+  "terraform_resources_remaining": 0,
+  "instances": [
+    {
+      "id": "i-REDACTED",
+      "state": "terminated"
+    },
+    {
+      "id": "i-REDACTED",
+      "state": "terminated"
+    },
+    {
+      "id": "i-REDACTED",
+      "state": "terminated"
+    },
+    {
+      "id": "i-REDACTED",
+      "state": "terminated"
+    }
+  ],
+  "vpcs": 0,
+  "endpoints": 0,
+  "volumes": 0,
+  "security_groups": 0,
+  "package_bucket_absent": true,
+  "lab_roles_remaining": [],
+  "lab_instance_profiles_remaining": [],
+  "result": "PASS"
+}

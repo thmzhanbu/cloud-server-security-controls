@@ -1,0 +1,22 @@
+{
+  "CommandId": "d5144054-fa2e-478c-8478-30c4c23517e9",
+  "InstanceId": "i-REDACTED",
+  "Comment": "",
+  "DocumentName": "AWS-RunShellScript",
+  "DocumentVersion": "$DEFAULT",
+  "PluginName": "aws:runShellScript",
+  "ResponseCode": 0,
+  "ExecutionStartDateTime": "2026-10-05T03:13:16.532Z",
+  "ExecutionElapsedTime": "PT5.051S",
+  "ExecutionEndDateTime": "2026-10-05T03:13:21.532Z",
+  "Status": "Success",
+  "StatusDetails": "Success",
+  "StandardOutputContent": "{\"utc\": \"2026-10-05T03:13:21.577016+00:00\", \"destination\": \"PRIVATE_LAB_IP\", \"port\": 5432, \"expected\": \"blocked\", \"observed\": \"blocked\", \"passed\": true, \"detail\": \"Connection timed out; correlate with listener health and destination policy.\"}\n",
+  "StandardOutputUrl": "",
+  "StandardErrorContent": "",
+  "StandardErrorUrl": "",
+  "CloudWatchOutputConfig": {
+    "CloudWatchLogGroupName": "",
+    "CloudWatchOutputEnabled": false
+  }
+}
